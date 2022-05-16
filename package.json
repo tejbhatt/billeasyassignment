@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "deploy": "git add . && git commit -m \"deployment\" && git push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@joi/date": "^2.1.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "helmet": "^4.6.0",
+    "joi": "^17.6.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "npx": "^10.2.2",
+    "path": "^0.12.7",
+    "pg": "^8.7.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0",
+    "husky": "^4.3.8",
+  
+    "sequelize-cli": "^6.4.1"
+  }
+}

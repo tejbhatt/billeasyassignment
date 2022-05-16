@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "a7c41523-d0d0-4bbc-ab1b-bc14ec46ba05",
+		"name": "taj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Simple",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Employee By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/employee/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"emopoy2\",\n    \"fathername\":\"al2\",\n    \"salary\":122,\n    \"joiningDate\":\"2022-12-25\",\n    \"post\":\"developer\",\n    \"qualification\":\"MPhill\",\n    \"gender\":\"male\",\n    \"departmentname\":\"BIO\",\n    \"location\":\"Coyo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/addemployee",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"addemployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Employee",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "All departments",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

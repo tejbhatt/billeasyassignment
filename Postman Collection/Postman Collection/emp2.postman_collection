@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "7659c7da-7645-4ff3-8acc-5410ada49b29",
+		"name": "taj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Simple",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/employee/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employee",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"employee3\",\n    \"fathername\":\"babyrao\",\n    \"salary\":12200,\n    \"joiningDate\":\"1998-10-26\",\n    \"post\":\"manager\",\n    \"qualification\":\"Mtech\",\n    \"gender\":\"male\",\n    \"departmentname\":\"BIO\",\n    \"location\":\"Thane\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/addemployee",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"addemployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/employee/?date=2022-11-26",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employee",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2022-11-26"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All departments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/department/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"department",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
